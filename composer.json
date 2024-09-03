@@ -1,0 +1,16 @@
+{
+    "name": "kwaltas/weapon-assignment-system",
+    "description": "this a sytem for assigment weapons",
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "endroid/qr-code": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

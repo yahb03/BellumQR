@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #AE8A50;
+  --background-color: #222;
+  --container-background: #000;
+  --input-background: #333;
+  --input-text-color: #fff;
+  --button-background: #AE8A50;
+  --button-text-color: #000;
+  --button-hover: #C8A45D;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--primary-color);
+}
+
+.container {
+  background-color: var(--container-background);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  width: auto;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-field {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--input-background);
+  color: var(--input-text-color);
+}
+
+.button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+@media (max-width: 600px) {
+  .container {
+      width: 90%;
+      padding: 20px;
+  }
+}

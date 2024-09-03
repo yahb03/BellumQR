@@ -1,0 +1,16 @@
+## Correr SQL ##
+
+brew services start mysql
+
+## Ingresar a SQL ##
+
+mysql -u root -p
+
+SHOW DATABASES
+
+USE bellumqr
+
+CORRER PHP
+
+php -S localhost:8000
+
